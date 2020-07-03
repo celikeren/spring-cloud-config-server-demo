@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/celikeren/spring-cloud-config-server-demo.git
+          searchPaths: config-server/src/main/resources/configs
+          default-label: master  
+          #username: <username>
+          #password: <password>
+          #skip-ssl-validation: true
+    
+server:
+  port: 8080
