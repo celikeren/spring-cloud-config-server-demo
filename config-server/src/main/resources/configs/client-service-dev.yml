@@ -1,2 +1,4 @@
 server:
    port: 8081
+   
+value: client-service-dev

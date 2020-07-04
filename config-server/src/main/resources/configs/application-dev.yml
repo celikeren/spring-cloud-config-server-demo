@@ -1,2 +1,4 @@
 management.endpoint.health.show-details: always
 management.endpoint.health.show-components: always
+
+value: application-dev
