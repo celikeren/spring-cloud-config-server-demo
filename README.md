@@ -6,7 +6,7 @@
 
 - **default-label** attribute is the selected branch. There's currently only one branch.
 
-- If given git source is not public **username** and **password** should be given.
+- If given git source is not public, **username** and **password** should be given.
 
 - Client services only have a **bootstrap.yml** file including **application name** and **config uri**.
 
@@ -14,7 +14,7 @@
 
 - **application-dev.yml**, **application-test.yml** and **application-prod.yml** files are common for all services. When you run client-service with test profile, both **application-test** and **client-service-test.yml** files are applied.
 
-- You can test config server with a GET request to [localhost:8080/{application-name}/{env}](http://localhost:8080/{application-name}/{env}). For example a **GET** request to [localhost:8080/client-service/test](http://localhost:8080/client-service/test) will return both properties from both **application-test.yml** and **client-service-test.yml** in this case.
+- You can test config server with a **GET** request to [localhost:8080/{application-name}/{env}](http://localhost:8080/{application-name}/{env}). For example a **GET** request to [localhost:8080/client-service/test](http://localhost:8080/client-service/test) will return both properties from both **application-test.yml** and **client-service-test.yml** in this case.
 
   - GET
   - [localhost:8080/client-service/test](http://localhost:8080/client-service/test)
@@ -47,7 +47,7 @@
 		}
 	]
 }
-  ```
+```
 
 - If there's same value in both **application-test.yml** and **client-service-test.yml**, application specific value overrides common value.
 
