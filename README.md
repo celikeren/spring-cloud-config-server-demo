@@ -20,6 +20,7 @@
   - [localhost:8080/client-service/test](http://localhost:8080/client-service/test)
 
   - Response:
+```json
   {
 	"name": "client-service",
 	"profiles": [
@@ -46,6 +47,7 @@
 		}
 	]
   }
+```
 
 - If there's same value in both **application-test.yml** and **client-service-test.yml**, application specific value overrides common value.
 
